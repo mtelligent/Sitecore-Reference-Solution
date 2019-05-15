@@ -1,0 +1,35 @@
+﻿@using Sitecore.Extensions
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+@using Glass.Mapper.Sc.Mvc
+
+@model SF.Foundation.SXAGlass.Models.VariantsRenderingGlassModel<SF.Feature.SampleFeature.Models.SampleContentListModel>
+
+<div @Html.Sxa().Component("sample-content-list", Model.Attributes)>
+    <div class="component-content">
+        <h2>@Html.Glass().Editable(Model.GlassModel, x => x.Title)</h2>
+
+        @if (Model.GlassModel.Content == null || Model.GlassModel.Content.Count == 0)
+        {
+            if (Sitecore.Context.PageMode.IsExperienceEditor)
+            {
+                <div>No Content Exists for that Category. Check your indexes?</div>
+            }
+        }
+        else
+        {
+            foreach (var contentItem in Model.GlassModel.Content)
+            {
+                <div class="content-item @contentItem.Title">
+                    @foreach (BaseVariantField variantField in Model.VariantFields)
+                    {
+                        @Html.RenderingVariants().RenderVariant(variantField, contentItem.Item, Model.RenderingWebEditingParams)
+                    }
+                </div>
+            }
+        }
+        </div>
+</div>

@@ -1,0 +1,18 @@
+﻿---
+ID: "c2c57683-217b-496a-a7ac-6a85d921c0ab"
+Parent: "3e21e239-b4f6-4655-bc52-0d39e7701651"
+Template: "e1a3b30c-77bc-4f6c-a008-d01b3371235d"
+Path: /sitecore/templates/Branches/Feature/SampleFeature/Sample Content Categories Variants/$name
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190515T131605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

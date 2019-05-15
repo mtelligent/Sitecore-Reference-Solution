@@ -1,0 +1,21 @@
+﻿---
+ID: "94ca7d78-212e-4813-842a-fd46340bfbd6"
+Parent: "3742963b-237e-48c0-b01e-38010ce2bf2f"
+Template: "3742963b-237e-48c0-b01e-38010ce2bf2f"
+Path: /sitecore/templates/Foundation/Sample/Folder Templates/Sample Content Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {D55CC180-D82F-49DF-85B4-85A56E97DB24}
+    {3742963B-237E-48C0-B01E-38010CE2BF2F}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190509T150101Z

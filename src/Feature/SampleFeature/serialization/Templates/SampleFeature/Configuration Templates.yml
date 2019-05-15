@@ -1,0 +1,14 @@
+﻿---
+ID: "8813f69a-4b22-4e46-9ce1-6303bf6a8fb3"
+Parent: "d7c60f0c-a31f-4ba0-ab48-33c7673fff71"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Feature/SampleFeature/Configuration Templates
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190509T145745Z

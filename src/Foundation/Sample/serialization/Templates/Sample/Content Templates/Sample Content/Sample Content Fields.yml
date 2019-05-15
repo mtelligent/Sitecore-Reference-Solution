@@ -1,0 +1,14 @@
+﻿---
+ID: "634a5697-06b8-4868-b658-85a5885971fd"
+Parent: "d55cc180-d82f-49df-85b4-85a56e97db24"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/Sample/Content Templates/Sample Content/Sample Content Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190509T150006Z

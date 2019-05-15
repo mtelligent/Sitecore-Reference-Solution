@@ -1,0 +1,18 @@
+﻿---
+ID: "630daadf-79fd-4cb3-972c-56e605d36938"
+Parent: "8ab243d5-e7c2-4294-8e0c-4046bb9ce517"
+Template: "8ab243d5-e7c2-4294-8e0c-4046bb9ce517"
+Path: /sitecore/templates/Feature/SampleFeature/Rendering Parameters/Sample Content List/__Standard Values
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120629T104300

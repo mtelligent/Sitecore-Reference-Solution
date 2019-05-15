@@ -1,0 +1,30 @@
+﻿---
+ID: "fda1b373-a196-4365-9a44-3a29ec608238"
+Parent: "3f982e97-4544-4276-af6e-754e72d8d049"
+Template: "ea8a3f26-9ccd-443a-95f5-71b868a94bd0"
+Path: /sitecore/system/Settings/Feature/SampleFeature/SampleFeature Site Setup/Add Available Renderings
+DB: master
+SharedFields:
+- ID: "4795a7c6-08a9-4248-86c3-d460062c3a22"
+  Hint: Location
+  Type: Treelist
+  Value: "{84179507-91A2-47EA-A424-9D338F64C953}"
+- ID: "7868e6bc-525c-4fce-ab8a-77da3e09b171"
+  Hint: Name
+  Value: Sample Feature
+- ID: "e62c28f0-9d3b-46e2-8bec-a5e120542499"
+  Hint: Template
+  Type: Treelist
+  Value: "{EEDEB546-884E-4A80-ABB3-2AD1217E25AD}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190515T131758Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

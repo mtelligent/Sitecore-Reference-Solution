@@ -1,0 +1,14 @@
+﻿---
+ID: "1f1f7873-3122-4416-ae18-726b8fcaeaa5"
+Parent: "d088ccec-d10e-4cf5-9bcb-9fb0c800c722"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/Sample/Content Templates/Sample Content Category/Category Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190509T155900Z

@@ -1,0 +1,26 @@
+﻿---
+ID: "3f982e97-4544-4276-af6e-754e72d8d049"
+Parent: "b41f8e7f-4a4b-4a40-8452-ebfd708cbf2f"
+Template: "292ccfcd-7790-4692-856b-76014b8038e7"
+Path: /sitecore/system/Settings/Feature/SampleFeature/SampleFeature Site Setup
+DB: master
+SharedFields:
+- ID: "40deee2f-7595-40bd-b2c9-51f9e2346100"
+  Hint: Dependencies
+  Type: Treelist
+  Value: "{0881D05E-7230-4D85-AB40-17DA13612382}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190509T144331Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: SampleFeature
