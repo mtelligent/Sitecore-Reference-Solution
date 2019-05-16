@@ -175,6 +175,7 @@
     <Compile Include="Models\SampleContent.cs" />
     <Compile Include="Models\SampleContentCategory.cs" />
     <Compile Include="Models\SampleContentCategoryFolder.cs" />
+    <Compile Include="Search\CategoryComputedField.cs" />
     <Compile Include="Search\SampleContentSearchResultItem.cs" />
     <Compile Include="Pipelines\GlassLoader.cs" />
     <Compile Include="Pipelines\SampleContentRepositoryConfigurator.cs" />

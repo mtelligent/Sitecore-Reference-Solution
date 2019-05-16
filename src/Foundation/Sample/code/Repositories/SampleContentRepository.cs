@@ -65,7 +65,8 @@ namespace SF.Foundation.Sample.Repositories
             ISearchIndex index = ContentSearchManager.GetIndex(indexableItem);
             using (IProviderSearchContext context = index.CreateSearchContext())
             {
-                var categoryId = new Sitecore.Data.ID(category.Id);
+                var categoryId = category.Id.ToString("B").ToUpper();
+
                 //Using Predicate Builder as Example only, Can add subqueries if needed.
                 var baseQuery = PredicateBuilder.True<SampleContentSearchResultItem>();
                 baseQuery = baseQuery.And(item => item.Paths.Contains(contentRoot.ID));
@@ -77,8 +78,15 @@ namespace SF.Foundation.Sample.Repositories
                 //If we didn't need things editable, we could return the search result item directly.
                 var requestContext = ServiceLocator.ServiceProvider.GetService<IRequestContext>();
 
-                return results.Hits.Select(x => requestContext.SitecoreService.GetItem<SampleContent>(new Glass.Mapper.Sc.GetItemByIdOptions() { Id = x.Document.ItemId.Guid })).ToList();
-                
+                //return results.Hits.Select(x => requestContext.SitecoreService.GetItem<SampleContent>(new Glass.Mapper.Sc.GetItemByIdOptions() { Id = x.Document.ItemId.Guid })).ToList();
+                var contentList = new List<SampleContent>();
+                foreach (var hit in results.Hits)
+                {
+                    var content = requestContext.SitecoreService.GetItem<SampleContent>(new Glass.Mapper.Sc.GetItemByIdOptions() { Id = hit.Document.ItemId.Guid });
+                    contentList.Add(content);
+                }
+                return contentList;
+
             }
             
         }

@@ -11,9 +11,8 @@ namespace SF.Foundation.Sample.Models
 {
     public class SampleContentSearchResultItem : Sitecore.ContentSearch.SearchTypes.SearchResultItem
     {
-        [IndexField("category")]
-        [TypeConverter(typeof(IndexFieldIDValueConverter))]
-        public virtual ID Category { get; set; } 
+        [IndexField("categoryid")]
+        public string Category { get; set; } 
 
     }
 }

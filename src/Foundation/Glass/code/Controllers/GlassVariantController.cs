@@ -37,11 +37,17 @@ namespace SF.Foundation.SXAGlass.Controllers
             get { return base.GetContextItem<T>(); }
         }
 
+        private VariantsRenderingGlassModel<T> _model = null;
+
         public VariantsRenderingGlassModel<T> Model
         {
             get
             {
-                return Repository.GetModel() as VariantsRenderingGlassModel<T>;
+                if (_model == null)
+                {
+                    _model = Repository.GetModel() as VariantsRenderingGlassModel<T>;
+                }
+                return _model;
             }
         }
 

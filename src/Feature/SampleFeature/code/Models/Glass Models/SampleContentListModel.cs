@@ -18,6 +18,7 @@ namespace SF.Feature.SampleFeature.Models
         [SitecoreField(FieldId = Constants.Fields.SampleContentList.Category)]
         public virtual SampleContentCategory Category { get; set; }
 
-        public List<SampleContent> Content { get; set; }
+        [SitecoreIgnore]
+        public virtual List<SampleContent> Content { get; set; }
     }
 }
